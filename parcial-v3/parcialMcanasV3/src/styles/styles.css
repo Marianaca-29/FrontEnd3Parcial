@@ -1,0 +1,62 @@
+#root {
+    max-width: 1280px;
+    margin: 70 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+body {
+    background-image: url("../img/runner.jpg");
+	background-size: cover;
+    margin: 0;
+    display: flex;
+    place-items:center;
+    min-width: 320px;
+    min-height: 100vh;
+    padding: 0.6em 1.2em;
+}
+
+button {
+    border-color: rgb(247, 248, 250);
+	position: relative;
+	display: block;
+	padding: 15px 10px;
+	border-radius: 6px;
+	text-align: center;
+	font-weight: bold;
+	max-width: 320px;
+	height: 65px;
+	overflow: hidden;
+	color:#ffffff;
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:#545c71;
+    padding: 5%;
+}
+ 
+button:before{
+	left: -48%;
+}
+ 
+button:hover{
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#1791b3
+}
+ 
+button:hover:after,
+button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: #7aaeed;
+	transition: all ease 0.5s;
+}
+ 
+button:hover:after{
+	right: 130%;
+}
+ 
+button:hover:before{
+	left: 130%;
+}
